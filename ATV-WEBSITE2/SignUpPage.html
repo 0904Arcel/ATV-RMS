@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-ATV Rental</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <link rel="icon" href="ATVLOGO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Baloo+Tamma+2&family=Black+Ops+One&family=Bungee+Inline&family=Fredericka+the+Great&family=Fredoka&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="MALABO"></div>
+    
+    
+    <div class="main_signup">
+        <div class="Background-signup">
+            <img src="ATV BACKGROUND/Sign up-cuate.png" class="logomosignup">
+        </div>
+        <div class="signupna">
+            <h1>Sign Up</h1>
+            <hr>
+            <div>
+                <img class="picturemo"src="ATV BACKGROUND/Profile.png" id="uploadedImage" src="#" alt="Uploaded Image">
+              </div>
+                  
+            <form action="#" method="post" enctype="multipart/form-data">
+                <button type="button" class="btn_img">
+                    <ion-icon name="camera"></ion-icon>
+                <input type="file" name="picture" id="picture" accept="image/*">
+               </button>
+              </form>
+              
+            <div class="inputbox_boxSignup">
+                
+                <input type="text" placeholder="ex. Juan D. Delacruz" required>
+                <h4>Full Name:</h4>
+            </input>
+            </div>
+            <div class="inputbox_boxSignup">
+                <input type="text" placeholder="ex. 09123456789" required>
+                <h4>Cellphone No.:</h4>
+            </input>
+            </div>
+            <div class="inputbox_boxSignup">
+                <input type="text" placeholder="ex. juandelacruz04@gmail.com" required>
+                <h4>Gmail Address:</h4>
+            </input>
+            </div>
+            <div class="inputbox_boxSignup">
+                <input type="text" placeholder="ex. SanIsidro Montalban Ridruguez Rizal" required>
+                <h4>Address:</h4>
+            </input>
+            </div>
+            <hr style="position: absolute; width: 99.9%; height: 2px; top: 368px;">
+            <div class="inputbox_boxSignup" style="position: relative; left:20px;margin-top: 20px;">
+                <input type="text" placeholder="User Name" required>
+            </input>
+            </div>
+            <div class="inputbox_boxSignup" style="position: relative; left:20px;">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <a href="LoginPage.html">
+            <button type="submit" class="btnsignup">
+                SignUp
+            </button>
+            </a>
+        </div>
+    </div>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+      const input = document.getElementById("picture");
+      const img = document.getElementById("uploadedImage");
+
+      input.addEventListener("change", function(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function() {
+          img.src = reader.result;
+        };
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      });
+    });
+
+</script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
